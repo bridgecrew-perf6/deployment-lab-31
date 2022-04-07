@@ -20,21 +20,21 @@ app.get('/', (req, res) => {
 })
 
 try {
-    nonExistentFunction();
+    error();
   } catch (error) {
     console.error(error);
     rollbar.error(`triggered so now i wont work cus you triggered me`)
 }
 
 try {
-    nonExistentFunction();
+    critical();
   } catch (error) {
     console.error(error);
     rollbar.critical(`CRITICAL SHOT`)
 }
 
 try {
-    nonExistentFunction();
+    warning();
   } catch (error) {
     console.error(error);
     rollbar.warning(`FINAL WARNING DUDE BRO`)

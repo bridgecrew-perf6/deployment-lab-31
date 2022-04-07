@@ -1,10 +1,8 @@
 console.log('fufufufufuooooom')
 
-const contact = document.getElementsByClassName('Contact');
-
-
+const contact = document.querySelector('.right');
 
 
 contact.addEventListener('click', () =>{
-    alert('i dont live there foo')
+    alert('working')
 })
