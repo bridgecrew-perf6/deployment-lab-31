@@ -16,9 +16,12 @@ var rollbar = new Rollbar({
 rollbar.log("Hello world!");
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../index.html', '../purchase.html'))
+    res.sendFile(path.join(__dirname, '../index.html'))
 })
 
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '../purchase'))
+})
 // try {
 //     error();
 //   } catch (error) {
