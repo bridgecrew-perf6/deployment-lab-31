@@ -1,11 +1,10 @@
 console.log('fufufufufuooooom')
 
-const contact = document.getElementsByClassName('Contact')
+const contact = document.getElementsByClassName('Contact');
 
 
-const firstEvent = () =>{
+
+
+contact.addEventListener('click', () =>{
     alert('i dont live there foo')
-}
-
-
-contact.addEventListener('click', firstEvent)
+})
