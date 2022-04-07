@@ -33,6 +33,13 @@ try {
     rollbar.critical(`CRITICAL SHOT`)
 }
 
+try {
+    nonExistentFunction();
+  } catch (error) {
+    console.error(error);
+    rollbar.error(`triggered so now i wont work cus you triggered me`)
+}
+
 const PORT = process.env.PORT || 4005
 
 app.listen(PORT, () => { console.log(`listening on ${PORT}`)})
