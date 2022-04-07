@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../index.html'))
 })
 
-app.get('/', (req, res) => {
+app.get('/purchase.html', (req, res) => {
     res.sendFile(path.join(__dirname, '../purchase'))
 })
 // try {
