@@ -16,29 +16,29 @@ var rollbar = new Rollbar({
 rollbar.log("Hello world!");
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../index.html'))
+    res.sendFile(path.join(__dirname, '../index.html', '../purchase.html'))
 })
 
-try {
-    error();
-  } catch (error) {
-    console.error(error);
-    rollbar.error(`triggered so now i wont work cus you triggered me`)
-}
+// try {
+//     error();
+//   } catch (error) {
+//     console.error(error);
+//     rollbar.error(`triggered so now i wont work cus you triggered me`)
+// }
 
-try {
-    critical();
-  } catch (error) {
-    console.error(error);
-    rollbar.critical(`CRITICAL SHOT`)
-}
+// try {
+//     critical();
+//   } catch (error) {
+//     console.error(error);
+//     rollbar.critical(`CRITICAL SHOT`)
+// }
 
-try {
-    warning();
-  } catch (error) {
-    console.error(error);
-    rollbar.warning(`FINAL WARNING DUDE BRO`)
-}
+// try {
+//     warning();
+//   } catch (error) {
+//     console.error(error);
+//     rollbar.warning(`FINAL WARNING DUDE BRO`)
+// }
 
 const PORT = process.env.PORT || 4005
 
