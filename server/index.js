@@ -23,7 +23,7 @@ try {
     nonExistentFunction();
   } catch (error) {
     console.error(error);
-    rollbar.error(`${err} triggered in the post request to /api/students`)
+    rollbar.error(`triggered so now i wont work cus you triggered me`)
 }
 
 const PORT = process.env.PORT || 4005
