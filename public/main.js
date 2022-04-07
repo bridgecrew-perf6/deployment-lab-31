@@ -1,6 +1,6 @@
 console.log('fufufufufuooooom')
 
-const contact = document.querySelector('.contact')
+const contact = document.getElementsByClassName('Contact')
 
 
 const firstEvent = () =>{
