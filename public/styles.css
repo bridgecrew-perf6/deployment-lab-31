@@ -89,5 +89,15 @@ main {
         left: 10px;
     }
 
+    #text{
+        position: relative;
+        top: 9vh;
+        height: 700px
+    }
+
+    #lol{
+        background-color: rgba(54, 3, 3, 0.541);
+        color:white
+    }
 
     
